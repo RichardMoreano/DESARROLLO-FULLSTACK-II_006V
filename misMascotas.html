@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="./img/LogoSolo.png" type="image/png" alt="Logo Guau&Miau">
+  <title>Mis Mascotas | Guau&Miau</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="pngLogo">
+      <img src="./img/LogoGuau&Miau.png" alt="Logo Guau&Miau" class="logo"/>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a class="active" href="mis-mascotas.html">Mis Mascotas</a>
+      <a id="linkSalir" class="hidden" href="#">Salir</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Mis Mascotas</h2>
+    <div id="resumenUsuario" class="info" style="margin-bottom:12px;"></div>
+
+    <fieldset class="mascotas">
+      <legend>Listado y carga de mascotas</legend>
+      <div id="listaMascotas"></div>
+
+      <div style="display:flex; gap:10px; margin-top:8px;">
+        <button type="button" class="btn outline" id="btnAgregarMascota">+ Añadir mascota</button>
+        <button type="button" class="btn" id="btnGuardarMascotas">Guardar cambios</button>
+      </div>
+      <div id="mensajeMascotas" class="success" style="margin-top:8px;"></div>
+      <small class="hint">Recordá presionar <strong>Guardar cambios</strong> para persistir en tu cuenta.</small>
+    </fieldset>
+
+    <section>
+      <img src="./img/Perro&GatoViendoMonitor.png" alt="Gato y perro mirando la pantalla" class="perroYGato2"/>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Guau&Miau - contacto@guauymiau.tienda</p>
+  </footer>
+</body>
+</html>

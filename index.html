@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Tienda Web</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/LogoSolo.png" type="image/png" alt="Logo Guau&Miau">
+  <title>Guau&Miau | Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Mi Tienda Web</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="registro.html">Registro</a></li>
-        <li><a href="login.html">Iniciar Sesión</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="pngLogo">
+      <img src="./img/LogoGuau&Miau.png" alt="Logo Guau&Miau" class="logo"/>
+    </div>
+    <nav class="nav">
+      <a id="linkInicio" class="active" href="index.html">Inicio</a>
+      <a id="linkRegistro" href="registro.html">Registro</a>
+      <a id="linkLogin" href="login.html">Iniciar Sesión</a>
+      <a id="linkMisMascotas" class="hidden" href="misMascotas.html">Mis Mascotas</a>
+    </nav>    
   </header>
 
   <main>
-    <section>
-      <h2>Bienvenido</h2>
-      <p>Compra los mejores productos al mejor precio.</p>
-      <button>Ver Ofertas</button>
+    <section class="inicio">
+      <img src="./img/Reciclaje.png" alt="Perro feliz con juguete" class="inicioImg"/>
+      <div class="inicioText">
+        <h2>Juguetes sostenibles e innovadores para tus mascotas</h2>
+        <p>Hechos con materiales reciclados y diseñados para horas de diversión.</p>
+        <a class="btn" href="registro.html">Crear cuenta</a>
+      </div>
+    </section>
+
+    <section id="juguetes" class="tarjetas">
+      <article class="card">
+        <img src="./img/Pelotas.png" alt="Pelotas ecológicas" />
+        <h3>Pelotas ecológicas</h3>
+        <p>Resistentes y amigables con el medio ambiente.</p>
+        <button class="btn">Ver más</button>
+      </article>
+      <article class="card">
+        <img src="./img/GatoJuguetes.png" alt="Rascadores para gatos" />
+        <h3>Rascadores para gatos</h3>
+        <p>Diseños ergonómicos que cuidan sus uñas.</p>
+        <button class="btn">Ver más</button>
+      </article>
+      <article class="card">
+        <img src="./img/AvesJuguetes.png" alt="Juguetes para aves" />
+        <h3>Juguetes para aves</h3>
+        <p>Colores y texturas que estimulan su curiosidad.</p>
+        <button class="btn">Ver más</button>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Mi Tienda Web - Contacto: contacto@mitienda.com</p>
+  <footer class="footer">
+    <p>&copy; 2025 Guau&Miau - contacto@guauymiau.tienda</p>
   </footer>
 </body>
 </html>

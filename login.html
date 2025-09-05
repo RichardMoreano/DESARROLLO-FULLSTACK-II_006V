@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/LogoSolo.png" type="image/png" alt="Logo Guau&Miau">
+  <title>Iniciar Sesión | Guau&Miau</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="pngLogo">
+      <img src="./img/LogoGuau&Miau.png" alt="Logo Guau&Miau" class="logo"/>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="registro.html">Registro</a>
+      <a class="active" href="login.html">Iniciar Sesión</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h2>Iniciar sesión</h2>
+    <form id="formLogin" novalidate>
+      <div class="form-group">
+        <label for="correoLogin">Correo @duoc.cl</label>
+        <input type="email" id="correoLogin" required placeholder="usuario@duoc.cl" autocomplete="email">
+        <div class="error" id="errCorreoLogin"></div>
+      </div>
+      <div class="form-group">
+        <label for="passwordLogin">Contraseña</label>
+        <input type="password" id="passwordLogin" required autocomplete="current-password">
+        <div class="error" id="errPassLogin"></div>
+      </div>
+      <button type="submit" class="btn">Entrar</button>
+      <p class="info"><a href="#" id="recuperar">¿Olvidaste tu contraseña?</a></p>
+      <div id="mensajeLogin" class="error"></div>
+    </form>
+
+    <section class="tips">
+      <h3>Consejos</h3>
+      <ul>
+        <li>Verificá si tu correo termina en <strong>@duoc.cl</strong>.</li>
+        <li>La contraseña distingue MAYÚSCULAS/minúsculas.</li>
+      </ul>
+      <img src="./img/Perro&GatoViendoMonitor.png" alt="Gato y perro mirando la pantalla" class="perroYGato"/>
+      </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Guau&Miau</p>
+  </footer>
+</body>
+</html>
